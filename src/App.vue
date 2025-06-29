@@ -93,7 +93,7 @@
             </div>
           </div>
         </div>
-        <div class="border-t border-gray-500 pt-4 text-center">
+        <div class="border-t border-gray-400 pt-4 text-center">
           <p class="text-white text-sm">&copy; {{ new Date().getFullYear() }} All rights reserved.
           </p>
         </div>
