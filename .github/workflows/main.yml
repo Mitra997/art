@@ -1,0 +1,22 @@
+name: Build and Deploy
+on:
+  push:
+    branches: [master]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@main
+        with:
+          persist-credentials: false
+      - name: Install Dependencies
+        run: npm install
+      - name: Build App
+        run: npm run build
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        with:
+          branch: gh-pages
+          folder: dist
