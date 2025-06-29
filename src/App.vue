@@ -68,21 +68,6 @@
         <div class="flex items-center justify-items-center mb-8">
           <div class="relative inline-block mr-4">
             <img class="w-20 h-20 rounded-full border-2 border-white" :src="getImage('mitra-animation-1.png')" />
-            <!-- <span class="w-5 h-5 rounded-full absolute bottom-0.5 right-0.5">
-              <a href="https://www.linkedin.com/in/mitra-sharifi" target="_blank" rel="noopener noreferrer">
-                <svg class="
-                    h-5
-                    w-5
-                    inline-block
-                    text-gray-400
-                    hover:text-[#0072b1]
-                  " xmlns="http://www.w3.org/2000/svg" viewBox="7.025 7.025 497.951 497.95">
-                  <path
-                    d="M256 7.025C118.494 7.025 7.025 118.494 7.025 256S118.494 504.975 256 504.975 504.976 393.506 504.976 256C504.975 118.494 393.504 7.025 256 7.025zm-66.427 369.343h-54.665V199.761h54.665v176.607zM161.98 176.633c-17.853 0-32.326-14.591-32.326-32.587 0-17.998 14.475-32.588 32.326-32.588s32.324 14.59 32.324 32.588c.001 17.997-14.472 32.587-32.324 32.587zm232.45 199.735h-54.4v-92.704c0-25.426-9.658-39.619-29.763-39.619-21.881 0-33.312 14.782-33.312 39.619v92.704h-52.43V199.761h52.43v23.786s15.771-29.173 53.219-29.173c37.449 0 64.257 22.866 64.257 70.169l-.001 111.825z"
-                    fill="currentColor" />
-                </svg>
-              </a>
-            </span> -->
           </div>
           <div class="grid grid-cols-1">
             <div>
@@ -111,7 +96,6 @@ const getImage = (path: string) => {
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
-/* Global styles for smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
