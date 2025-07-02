@@ -15,7 +15,7 @@
 
 .p-splitter-gutter-handle {
     @apply rounded-md bg-transparent 
-        focus-visible:outline focus-visible:outline-1 focus-visible:outline-offset-2 focus-visible:outline-primary
+        focus-visible:outline-solid focus-visible:outline-1 focus-visible:outline-offset-2 focus-visible:outline-primary
         transition-colors duration-200
 }
 

@@ -13,10 +13,10 @@
 }
 
 .p-scrollpanel-bar {
-    @apply relative rounded-sm z-20 cursor-pointer opacity-0
+    @apply relative rounded-xs z-20 cursor-pointer opacity-0
         bg-surface-100 dark:bg-surface-800
         transition-opacity duration-200 border-none
-        focus-visible:outline focus-visible:outline-1 focus-visible:outline-offset-2 focus-visible:outline-primary
+        focus-visible:outline-solid focus-visible:outline-1 focus-visible:outline-offset-2 focus-visible:outline-primary
 }
 
 .p-scrollpanel-bar-y {

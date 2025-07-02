@@ -1,7 +1,25 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "./assets/primevue/tailwind.css";
-@import "tailwindcss/utilities";
+@import 'tailwindcss';
+@import './assets/primevue/tailwind.css' layer(components);
+
+@config '../tailwind.config.js';
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
 
 /* Primary and Surface Palettes */
 :root {
@@ -89,7 +107,7 @@
 .p-carousel-indicator-button {
   @apply flex items-center justify-center w-2 h-2 border-none rounded-full p-0 m-0 select-none cursor-pointer transition-colors duration-200
         bg-surface-200 hover:bg-surface-300 dark:bg-surface-400 dark:hover:bg-surface-200
-        focus-visible:outline focus-visible:outline-1 focus-visible:outline-offset-2 focus-visible:outline-primary;
+        focus-visible:outline-solid focus-visible:outline-1 focus-visible:outline-offset-2 focus-visible:outline-primary;
 }
 
 .p-carousel-indicator-active .p-carousel-indicator-button {

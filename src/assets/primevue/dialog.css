@@ -1,4 +1,4 @@
-@import './button';
+@import './button.css';
 
 .p-dialog {
     @apply max-h-[90%] scale-100 rounded-xl
@@ -29,11 +29,11 @@
 }
 
 .p-dialog-enter-active {
-    @apply transition-all duration-150 ease-[cubic-bezier(0,0,0.2,1)]
+    @apply transition-all duration-150 ease-out
 }
 
 .p-dialog-leave-active {
-    @apply transition-all duration-150 ease-[cubic-bezier(0.4,0,0.2,1)]
+    @apply transition-all duration-150 ease-in-out
 }
 
 .p-dialog-enter-from,
@@ -117,7 +117,7 @@
 }
 
 .p-dialog-maximized {
-    @apply !w-screen !h-screen top-0 start-0 max-h-full rounded-none
+    @apply w-screen! h-screen! top-0 start-0 max-h-full rounded-none
 }
 
 .p-dialog-maximized .p-dialog-content {

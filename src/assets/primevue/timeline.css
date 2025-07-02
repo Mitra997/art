@@ -69,9 +69,9 @@
 
 .p-timeline-event-marker {
     @apply inline-flex items-center justify-center relative self-baseline
-        border-2 rounded-full border-surface-200 dark:border-surface-700 w-[1.125rem] h-[1.125rem]
+        border-2 rounded-full border-surface-200 dark:border-surface-700 w-4.5 h-4.5
         bg-surface-0 dark:bg-surface-900
-        before:rounded-full before:w-[0.375rem] before:h-[0.375rem] before:bg-primary
+        before:rounded-full before:w-1.5 before:h-1.5 before:bg-primary
         after:absolute after:w-full after:h-full after:rounded-full after:shadow-[0px_0.5px_0px_0px_rgba(0,0,0,0.06),0px_1px_1px_0px_rgba(0,0,0,0.12)]
 }
 

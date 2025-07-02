@@ -8,7 +8,7 @@
 
 .p-colorpicker-preview {
     @apply w-6 h-6 p-0 border-none rounded-md transition-colors duration-200 cursor-pointer disabled:cursor-auto
-        focus-visible:outline focus-visible:outline-1 focus-visible:outline-offset-2 focus-visible:outline-primary
+        focus-visible:outline-solid focus-visible:outline-1 focus-visible:outline-offset-2 focus-visible:outline-primary
 }
 
 .p-colorpicker-panel {
