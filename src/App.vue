@@ -45,19 +45,8 @@
             </div>
             <div class="grid gap-4">
               <div>
-                <div
-                  class="flex flex-col lg:h-[29vw] md:h-[27vw] h-[20vw] items-center justify-center md:p-8 overflow-auto"
-                  style="font-size: 1vw;">
-                  <p><span class="font-semibold">Title:</span> Contemplation in silence</p>
-                  <p><span class="font-semibold">Medium:</span> Charcoal on paper</p>
-                  <br>
-                  <p class="text-center">This charcoal portrait captures a quiet, emotional moment of deep
-                    thought. The
-                    detailed textures,
-                    freckles, curls, and soft hands; highlight the subject's vulnerability and realism. The soft shading
-                    and
-                    bold contrast bring focus to the expression, creating a powerful and intimate atmosphere.</p>
-                </div>
+                <img class="h-auto max-w-full rounded-lg object-cover object-center" :src="getImage('guy-text.png')"
+                  alt=" gallery-photo" />
               </div>
               <div>
                 <img class="h-auto max-w-full rounded-lg object-cover object-center" :src="getImage('guy-3.jpg')"
@@ -71,26 +60,11 @@
                 <img class="h-auto max-w-full rounded-lg object-cover object-center" :src="getImage('girl-1.png')"
                   alt="gallery-photo" />
               </div>
-              <div>
-                <img class="h-auto max-w-full rounded-lg object-cover object-center" :src="getImage('girl-3.png')"
-                  alt="gallery-photo" />
-              </div>
             </div>
             <div class="grid gap-4">
               <div>
-                <div
-                  class="flex flex-col lg:h-[29vw] md:h-[27vw] h-[20vw] items-center justify-center md:p-8 overflow-auto"
-                  style="font-size: 1vw;">
-                  <p><span class="font-semibold">Title:</span> Contemplation in silence</p>
-                  <p><span class="font-semibold">Medium:</span> Charcoal on paper</p>
-                  <br>
-                  <p class="text-center">This charcoal portrait captures a quiet, emotional moment of deep
-                    thought. The
-                    detailed textures,
-                    freckles, curls, and soft hands; highlight the subject's vulnerability and realism. The soft shading
-                    and
-                    bold contrast bring focus to the expression, creating a powerful and intimate atmosphere.</p>
-                </div>
+                <img class="h-auto max-w-full rounded-lg object-cover object-center" :src="getImage('girl-text.png')"
+                  alt="gallery-photo" />
               </div>
               <div>
                 <img class="h-auto max-w-full rounded-lg object-cover object-center" :src="getImage('girl-2.png')"
@@ -101,19 +75,8 @@
           <div v-if="slotProps.data.id === 3" class="grid grid-cols-3 gap-4 px-2 items-center">
             <div class="grid gap-4">
               <div>
-                <div
-                  class="flex flex-col lg:h-[29vw] md:h-[27vw] h-[20vw] items-center justify-center md:p-8 overflow-auto"
-                  style="font-size: 1vw;">
-                  <p><span class="font-semibold">Title:</span> Contemplation in silence</p>
-                  <p><span class="font-semibold">Medium:</span> Charcoal on paper</p>
-                  <br>
-                  <p class="text-center">This charcoal portrait captures a quiet, emotional moment of deep
-                    thought. The
-                    detailed textures,
-                    freckles, curls, and soft hands; highlight the subject's vulnerability and realism. The soft shading
-                    and
-                    bold contrast bring focus to the expression, creating a powerful and intimate atmosphere.</p>
-                </div>
+                <img class="h-auto max-w-full rounded-lg object-cover object-center"
+                  :src="getImage('girl-half-text.png')" alt=" gallery-photo" />
               </div>
               <div class="grid grid-cols-2 gap-4">
                 <div class="grid">
@@ -233,7 +196,6 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
 import Carousel from 'primevue/carousel';
 
 const getImage = (path: string) => {
